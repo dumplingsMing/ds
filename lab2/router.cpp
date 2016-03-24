@@ -31,21 +31,27 @@ open_receivefd(int port)
 void 
 start_receiver(int port)
 {
+    /* open fd for receive use */
     int recv_fd;
     if ((recv_fd = open_receivefd(port)) < 0) {
         cerr << "error when opening receive fd";
         return -1;
     }
 
+    /* poll to receive package from others */
     int recv_len;
     struct sockaddr_in senderaddr;
     char buf[MAX_BUF];
     for (;;) {
+        /* a blocked receive function for UDP protocol*/
         if ((recv_len = recvform(recv_fd, buf, MAXBUF, 0, NULL, NULL)) < 0) {
             cerr << "error when receiving data" << endl;
             return -1;
         }
+
     }
+
+    /* close operation, may never reach here */
     close(rcvfd);
     return 0;
 }
