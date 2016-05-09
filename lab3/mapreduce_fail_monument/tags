@@ -1,0 +1,65 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CleanupFiles	mapreduce.go	/^func (mr *MapReduce) CleanupFiles() {$/;"	f
+CleanupRegistration	mapreduce.go	/^func (mr *MapReduce) CleanupRegistration() {$/;"	f
+DPrintf	mapreduce.go	/^func DPrintf(format string, a ...interface{}) (n int, err error) {$/;"	f
+Debug	mapreduce.go	/^const Debug = 0$/;"	c
+DoJob	worker.go	/^func (wk *Worker) DoJob(arg *DoJobArgs, res *DoJobReply) error {$/;"	f
+DoJobArgs	common.go	/^type DoJobArgs struct {$/;"	t
+DoJobReply	common.go	/^type DoJobReply struct {$/;"	t
+DoMap	mapreduce.go	/^func DoMap(JobNumber int, fileName string,$/;"	f
+DoReduce	mapreduce.go	/^func DoReduce(job int, fileName string, nmap int,$/;"	f
+InitMapReduce	mapreduce.go	/^func InitMapReduce(nmap int, nreduce int,$/;"	f
+JobType	common.go	/^type JobType string$/;"	t
+KeyValue	mapreduce.go	/^type KeyValue struct {$/;"	t
+KillWorkers	master.go	/^func (mr *MapReduce) KillWorkers() *list.List {$/;"	f
+MakeMapReduce	mapreduce.go	/^func MakeMapReduce(nmap int, nreduce int,$/;"	f
+Map	common.go	/^const ($/;"	c
+MapFunc	test_test.go	/^func MapFunc(value string) *list.List {$/;"	f
+MapName	mapreduce.go	/^func MapName(fileName string, MapJob int) string {$/;"	f
+MapReduce	mapreduce.go	/^type MapReduce struct {$/;"	t
+Merge	mapreduce.go	/^func (mr *MapReduce) Merge() {$/;"	f
+MergeName	mapreduce.go	/^func MergeName(fileName string,  ReduceJob int) string {$/;"	f
+Reduce	common.go	/^  Map = "Map"$/;"	c
+ReduceFunc	test_test.go	/^func ReduceFunc(key string, values *list.List) string {$/;"	f
+ReduceName	mapreduce.go	/^func ReduceName(fileName string, MapJob int, ReduceJob int) string {$/;"	f
+Register	mapreduce.go	/^func (mr *MapReduce) Register(args *RegisterArgs, res *RegisterReply) error {$/;"	f
+Register	worker.go	/^func Register(master string, me string) {$/;"	f
+RegisterArgs	common.go	/^type RegisterArgs struct {$/;"	t
+RegisterReply	common.go	/^type RegisterReply struct {$/;"	t
+RemoveFile	mapreduce.go	/^func RemoveFile(n string) {$/;"	f
+Run	mapreduce.go	/^func (mr *MapReduce) Run() {$/;"	f
+RunMaster	master.go	/^func (mr *MapReduce) RunMaster() *list.List {$/;"	f
+RunSingle	mapreduce.go	/^func RunSingle(nMap int, nReduce int, file string,$/;"	f
+RunWorker	worker.go	/^func RunWorker(MasterAddress string, me string,$/;"	f
+Shutdown	mapreduce.go	/^func (mr *MapReduce) Shutdown(args *ShutdownArgs, res *ShutdownReply) error {$/;"	f
+Shutdown	worker.go	/^func (wk *Worker) Shutdown(args *ShutdownArgs, res *ShutdownReply) error {$/;"	f
+ShutdownArgs	common.go	/^type ShutdownArgs struct {$/;"	t
+ShutdownReply	common.go	/^type ShutdownReply struct {$/;"	t
+Split	mapreduce.go	/^func (mr *MapReduce) Split(fileName string) {$/;"	f
+StartRegistrationServer	mapreduce.go	/^func (mr *MapReduce) StartRegistrationServer() {$/;"	f
+TestBasic	test_test.go	/^func TestBasic(t *testing.T) {$/;"	f
+TestManyFailures	test_test.go	/^func TestManyFailures(t *testing.T) {$/;"	f
+TestOneFailure	test_test.go	/^func TestOneFailure(t *testing.T) {$/;"	f
+Worker	worker.go	/^type Worker struct {$/;"	t
+WorkerInfo	master.go	/^type WorkerInfo struct {$/;"	t
+call	common.go	/^func call(srv string, rpcname string,$/;"	f
+check	test_test.go	/^func check(t *testing.T, file string) {$/;"	f
+checkWorker	test_test.go	/^func checkWorker(t *testing.T, l *list.List) {$/;"	f
+cleanup	test_test.go	/^func cleanup(mr *MapReduce) {$/;"	f
+hash	mapreduce.go	/^func hash(s string) uint32 {$/;"	f
+makeInput	test_test.go	/^func makeInput() string {$/;"	f
+mapreduce	common.go	/^package mapreduce$/;"	p
+mapreduce	mapreduce.go	/^package mapreduce$/;"	p
+mapreduce	master.go	/^package mapreduce$/;"	p
+mapreduce	test_test.go	/^package mapreduce$/;"	p
+mapreduce	worker.go	/^package mapreduce$/;"	p
+nMap	test_test.go	/^  nNumber= 100000$/;"	c
+nNumber	test_test.go	/^const ($/;"	c
+nReduce	test_test.go	/^  nMap = 100$/;"	c
+port	test_test.go	/^func port(suffix string) string {$/;"	f
+setup	test_test.go	/^func setup() *MapReduce {$/;"	f
